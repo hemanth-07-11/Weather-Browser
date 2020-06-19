@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather app</title>
+        <link rel="stylesheet" href="./main.css" />
+      
+    </head>
+<style>
+.th {
+  position: absolute;
+transition: transform .2s; 
+  top: 40px;
+font-family:Segoe Print;
+  left: 50px;
+
+ color:yellow;
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(342deg);
+  text-shadow: 1px 3px #8CF7F2;
+  font-size: 25px;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+.th:hover{
+
+transform: scale(1.1);
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(350deg);
+font-size: 40px
+}
+
+.blink {
+      animation: blinker 1s linear infinite;
+      color: yellow;
+      font-size: 26px;
+      font-weight: bold;
+      font-family:cursive;
+      }
+      @keyframes blinker {  
+      50% { opacity: 0; }
+      }
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F4F967, 0 0 20px #F4F967 , 0 0 30px #F4F967, 0 0 40px #F4F967, 0 0 50px red, 0 0 60px white, 0 0 70px 0C0A0A;
+  }
+  
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px #ff4da6, 0 0 40px #EEE972, 0 0 50px red, 0 0 60px #EEE972, 0 0 70px red, 0 0 80px #F4F967;
+  }}
+
+
+</style>
+    <body>
+        <div class="app-wrap">
+<center>
+<br><br><br><br><br><br>
+<div class="hem">
+
+            <header>
+                <input type="text" autocomplete="off" class="search-box"
+                placeholder="Search for a city..."/>
+            </header>
+            <main>
+                <section class="location">
+                    <div class="city">Example city</div>
+                    <div class="date">Display Date</div>
+                </section>
+                <div class="current">
+                    <div class="temp">Temp<span>°C</span></div>
+                    <div class="weather">Weather</div>
+                    <div class="hi-low">temp 35°C / Temp  31°C</div>
+                </div>
+            </main>
+</div>
+        </div>
+
+        <script src="./main.js"></script>
+
+
+<div class="th">
+<p class="blink">Weather Browser <br>Developed by <br> <a href="https://github.com/hemanth-07-11" target=_blank><b><font color="yellow"> HEMANTH N </font></b></a></p>
+</div>
+</b>
+    </body>
+</html>
